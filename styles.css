@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f201f;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #af9c9a;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flowerPot {
+  margin-top: 70px;
+  width: 200px;
+  height: auto;
+}
+
+.leftLeaf {
+  animation: anLeftLeaf 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.rightLeaf {
+  animation: anRightLeaf 2s ease-in-out infinite alternate;
+  transform-origin: center;
+  animation-delay: 0.5s;
+}
+
+@keyframes anLeftLeaf {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes anRightLeaf {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-3deg);
+  }
+}
